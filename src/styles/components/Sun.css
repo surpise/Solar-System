@@ -1,3 +1,5 @@
+@import '../animation/Rotate.css';
+
 .sun {
   position: absolute;
   top: 50%;
@@ -12,5 +14,8 @@
   0 0 2rem red,
   0 0 4rem orange;
 
-  background-color: yellow;
+  background: url(../../assets/sun.jpg);
+  background-size: 200% 100%;
+
+  animation: rotate 10s linear infinite;
 }

@@ -1,0 +1,8 @@
+@keyframes rotate {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -200%;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../animation/Rotate.css';
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 15vw;
+  aspect-ratio: 1;
+  
+  border-radius: 50%;
+  box-shadow:
+  0 0 2rem red,
+  0 0 4rem orange;
+
+  background: url(../../assets/sun.jpg);
+  background-size: 200% 100%;
+
+  animation: rotate 10s linear infinite;
+}

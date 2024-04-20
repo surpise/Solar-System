@@ -8,11 +8,22 @@
   width: 30vw;
   aspect-ratio: 1;
 
+  /* border-style: solid;
+  border-color: white;
+  border-radius: 50%; */
+
   animation: revolve 365s linear infinite;
-  transform-origin: center;
 }
 
 .earth {
+  position: absolute;
+  
+  width: 5vw;
+  aspect-ratio: 1;
+}
+
+.earth::before {
+  content: '';
   position: absolute;
 
   transform: rotate(23deg);
@@ -21,9 +32,32 @@
   aspect-ratio: 1;
 
   border-radius: 50%;
-  
+
   background: url(../../assets/earth.png);
   background-size: 100% 100%;
 
   animation: revolve 1s linear infinite;
+}
+
+.moon-orbit {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+
+  width: 10vw;
+  aspect-ratio: 1;
+
+  /* border-style: solid;
+  border-color: white;
+  border-radius: 50%; */
+
+  animation: revolve 1s linear infinite;
+}
+
+.moon{
+  width: 2vw;
+  aspect-ratio: 1;
+
+  background: url(../../assets/moon.png);
+  background-size: 100% 100%;
 }

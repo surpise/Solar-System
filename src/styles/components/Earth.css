@@ -5,7 +5,7 @@
   top: -250%;
   left: -250%;
 
-  width: 30vw;
+  width: 30rem;
   aspect-ratio: 1;
 
   border: solid 0.01rem gray;
@@ -19,7 +19,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: 3vw;
+  width: 3rem;
   aspect-ratio: 1;
 }
 
@@ -27,7 +27,7 @@
   content: '';
   position: absolute;
 
-  width: 3vw;
+  width: 3rem;
   aspect-ratio: 1;
 
   border-radius: 50%;
@@ -43,7 +43,7 @@
   top:-100%;
   left: -100%;
   
-  width: 9vw;
+  width: 9rem;
   aspect-ratio: 1;
 
   border: solid 0.01rem gray;
@@ -58,7 +58,7 @@
   transform: translate(-50%, -50%);
 
 
-  width: 1vw;
+  width: 1rem;
   aspect-ratio: 1;
 
   background: url(../../assets/moon.png);

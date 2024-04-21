@@ -1,4 +1,4 @@
-@import '../animation/Rotate.css';
+@import '../animation/Revolve.css';
 
 .sun {
   position: absolute;
@@ -6,16 +6,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 15vw;
+  width: 5rem;
   aspect-ratio: 1;
-  
+}
+
+.sun::before {
+  content: '';
+  position: absolute;
+
+  width: 5rem;
+  aspect-ratio: 1;
+
   border-radius: 50%;
   box-shadow:
-  0 0 2rem red,
-  0 0 4rem orange;
+    0 0 2rem red,
+    0 0 4rem orange;
 
   background: url(../../assets/sun.jpg);
   background-size: 200% 100%;
 
-  animation: rotate 10s linear infinite;
+  animation: revolve 27s linear infinite;
 }

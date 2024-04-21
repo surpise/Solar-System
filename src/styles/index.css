@@ -4,6 +4,6 @@ body {
   align-items: center;
   justify-items: center;
   min-width: 320px;
-  height: 100vh;
+  min-height: 100px;
   background-color: #010b19;
 }

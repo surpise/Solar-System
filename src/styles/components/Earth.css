@@ -1,0 +1,66 @@
+@import '../animation/Revolve.css';
+
+.earth-orbit {
+  position: absolute;
+  top: -250%;
+  left: -250%;
+
+  width: 30rem;
+  aspect-ratio: 1;
+
+  border: solid 0.01rem gray;
+  border-radius: 50%;
+
+  animation: revolve 365s linear infinite;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+.earth::before {
+  content: '';
+  position: absolute;
+
+  width: 3rem;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: url(../../assets/earth.png);
+  background-size: 100% 100%;
+
+  animation: revolve 1s linear infinite;
+}
+
+.moon-orbit {
+  position: absolute;
+  top:-100%;
+  left: -100%;
+  
+  width: 9rem;
+  aspect-ratio: 1;
+
+  border: solid 0.01rem gray;
+  border-radius: 50%;
+
+  animation: revolve 1s linear infinite;
+}
+
+.moon{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+
+  width: 1rem;
+  aspect-ratio: 1;
+
+  background: url(../../assets/moon.png);
+  background-size: 100% 100%;
+}

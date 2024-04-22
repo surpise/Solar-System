@@ -1,31 +1,17 @@
-@import '../animation/Revolve.css';
-@import '../animation/Rotate.css';
-
 .venus-orbit {
-  position: absolute;
   top: -200%;
   left: -200%;
 
   width: 20rem;
-  aspect-ratio: 1;
 
-  border: solid 0.01rem gray;
-  border-radius: 50%;
-
-  animation: revolve 225s linear infinite;
+  animation-duration: 225s;
 }
 
 .venus {
-  position: absolute;
-  top: 50%;
-
   width: 2rem;
-  aspect-ratio: 1;
-
-  border-radius: 50%;
 
   background: url(../../assets/venus.png);
   background-size: 100% 100%;
 
-  animation: rotate 117s linear infinite;
+  animation-duration: 117s;
 }

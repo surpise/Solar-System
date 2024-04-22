@@ -1,3 +1,4 @@
+import '@styles/components/Common.css';
 import '@styles/components/Sun.css';
 
 import Earth from '@components/Earth';

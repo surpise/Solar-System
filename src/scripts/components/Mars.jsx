@@ -2,8 +2,8 @@ import '@styles/components/Mars.css';
 
 const Mars = () => {
   return (
-    <div className="mars-orbit">
-      <div className="mars"></div>
+    <div className="orbit mars-orbit">
+      <div className="planet mars"></div>
     </div>
   );
 };

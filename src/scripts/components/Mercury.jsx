@@ -2,8 +2,8 @@ import '@styles/components/Mercury.css';
 
 const Mercury = () => {
   return (
-    <div className="mercury-orbit">
-      <div className="mercury"></div>
+    <div className="orbit mercury-orbit">
+      <div className="planet mercury"></div>
     </div>
   );
 };

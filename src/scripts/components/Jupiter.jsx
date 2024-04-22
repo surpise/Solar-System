@@ -2,8 +2,8 @@ import '@styles/components/Jupiter.css';
 
 const Jupiter = () => {
   return (
-    <div className="jupiter-orbit">
-      <div className="jupiter"></div>
+    <div className="orbit jupiter-orbit">
+      <div className="planet jupiter"></div>
     </div>
   );
 };

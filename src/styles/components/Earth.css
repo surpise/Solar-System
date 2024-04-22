@@ -1,18 +1,12 @@
-@import '../animation/Revolve.css';
 @import '../animation/Rotate.css';
 
 .earth-orbit {
-  position: absolute;
   top: -300%;
   left: -300%;
 
   width: 30rem;
-  aspect-ratio: 1;
 
-  border: solid 0.01rem gray;
-  border-radius: 50%;
-
-  animation: revolve 365s linear infinite;
+  animation-duration: 365s;
 }
 
 .earth {
@@ -39,26 +33,18 @@
 }
 
 .moon-orbit {
-  position: absolute;
   top: -100%;
   left: -100%;
 
   width: 6rem;
-  aspect-ratio: 1;
 
-  border: solid 0.01rem gray;
-  border-radius: 50%;
-
-  animation: revolve 1s linear infinite;
+  animation-duration: 1s;
 }
 
 .moon {
-  position: absolute;
-  top: 50%;
   transform: translate(-50%, -50%);
 
   width: 1rem;
-  aspect-ratio: 1;
 
   background: url(../../assets/moon.png);
   background-size: 100% 100%;

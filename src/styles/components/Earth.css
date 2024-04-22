@@ -3,8 +3,8 @@
 
 .earth-orbit {
   position: absolute;
-  top: -250%;
-  left: -250%;
+  top: -300%;
+  left: -300%;
 
   width: 30rem;
   aspect-ratio: 1;
@@ -40,9 +40,9 @@
 
 .moon-orbit {
   position: absolute;
-  top:-150%;
+  top: -150%;
   left: -150%;
-  
+
   width: 9rem;
   aspect-ratio: 1;
 
@@ -52,11 +52,10 @@
   animation: revolve 1s linear infinite;
 }
 
-.moon{
+.moon {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-
 
   width: 1rem;
   aspect-ratio: 1;

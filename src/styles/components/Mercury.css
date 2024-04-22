@@ -3,8 +3,8 @@
 
 .mercury-orbit {
   position: absolute;
-  top: -50%;
-  left: -50%;
+  top: -100%;
+  left: -100%;
 
   width: 10rem;
   aspect-ratio: 1;

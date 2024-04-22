@@ -3,6 +3,7 @@ import '@styles/components/Sun.css';
 import Earth from '@components/Earth';
 import Mercury from '@components/Mercury';
 import Venus from '@components/Venus';
+import Mars from '@components/Mars';
 
 const Sun = () => {
   return (
@@ -10,6 +11,7 @@ const Sun = () => {
       <Mercury />
       <Venus/>
       <Earth />
+      <Mars/>
     </div>
   );
 };

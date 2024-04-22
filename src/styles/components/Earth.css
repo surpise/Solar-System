@@ -40,10 +40,10 @@
 
 .moon-orbit {
   position: absolute;
-  top: -150%;
-  left: -150%;
+  top: -100%;
+  left: -100%;
 
-  width: 9rem;
+  width: 6rem;
   aspect-ratio: 1;
 
   border: solid 0.01rem gray;

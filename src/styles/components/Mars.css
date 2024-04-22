@@ -1,0 +1,31 @@
+@import '../animation/Revolve.css';
+@import '../animation/Rotate.css';
+
+.mars-orbit {
+  position: absolute;
+  top: -400%;
+  left: -400%;
+
+  width: 40rem;
+  aspect-ratio: 1;
+
+  border: solid 0.01rem gray;
+  border-radius: 50%;
+
+  animation: revolve 687s linear infinite;
+}
+
+.mars {
+  position: absolute;
+  top: 50%;
+
+  width: 2rem;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: url(../../assets/mars.png);
+  background-size: 100% 100%;
+
+  animation: rotate 1s linear infinite;
+}

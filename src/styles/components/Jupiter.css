@@ -1,0 +1,31 @@
+@import '../animation/Revolve.css';
+@import '../animation/Rotate.css';
+
+.jupiter-orbit {
+  position: absolute;
+  top: -500%;
+  left: -500%;
+
+  width: 50rem;
+  aspect-ratio: 1;
+
+  border: solid 0.01rem gray;
+  border-radius: 50%;
+
+  animation: revolve 4332s linear infinite;
+}
+
+.jupiter {
+  position: absolute;
+  top: 50%;
+
+  width: 5rem;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: url(../../assets/jupiter.png);
+  background-size: 100% 100%;
+
+  animation: rotate 0.375s linear infinite;
+}

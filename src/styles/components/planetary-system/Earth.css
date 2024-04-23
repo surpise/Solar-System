@@ -1,0 +1,51 @@
+@import '../../animation/Rotate.css';
+
+.earth-orbit {
+  top: -150%;
+  left: -150%;
+
+  width: 20rem;
+
+  animation-duration: 365s;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+
+  width: 3rem;
+  aspect-ratio: 1;
+}
+
+.earth::before {
+  content: '';
+  position: absolute;
+
+  width: 3rem;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: url(../../../assets/earth.png);
+  background-size: 100% 100%;
+
+  animation: rotate 1s linear infinite;
+}
+
+.moon-orbit {
+  top: -70%;
+  left: -70%;
+
+  width: 4rem;
+
+  animation-duration: 1s;
+}
+
+.moon {
+  transform: translate(-50%, -50%);
+
+  width: 1rem;
+
+  background: url(../../assets/moon.png);
+  background-size: 100% 100%;
+}

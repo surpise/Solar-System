@@ -1,4 +1,4 @@
-import '@styles/components/Mars.css';
+import '@styles/components/planetary-system/Mars.css';
 
 const Mars = () => {
   return (

@@ -1,4 +1,4 @@
-import '@styles/components/Saturn.css';
+import '@styles/components/planetary-system/Saturn.css';
 
 const Saturn = () => {
   return (

@@ -1,4 +1,4 @@
-import '@styles/components/Earth.css';
+import '@styles/components/planetary-system/Earth.css';
 
 const Earth = () => {
   return (

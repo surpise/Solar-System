@@ -1,4 +1,4 @@
-import '@styles/components/Mercury.css';
+import '@styles/components/planetary-system/Mercury.css';
 
 const Mercury = () => {
   return (

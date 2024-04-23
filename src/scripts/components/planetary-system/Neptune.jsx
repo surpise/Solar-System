@@ -1,4 +1,4 @@
-import '@styles/components/Neptune.css';
+import '@styles/components/planetary-system/Neptune.css';
 
 const Neptune = () => {
   return (

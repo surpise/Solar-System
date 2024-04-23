@@ -1,4 +1,4 @@
-import '@styles/components/Uranos.css';
+import '@styles/components/planetary-system/Uranos.css';
 
 const Uranos = () => {
   return (

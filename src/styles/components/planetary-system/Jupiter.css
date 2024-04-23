@@ -1,18 +1,18 @@
 .jupiter-orbit {
-  top: -500%;
-  left: -500%;
+  top: -400%;
+  left: -400%;
 
-  width: 50rem;
+  width: 45rem;
 
   animation-duration: 4332s;
 }
 
 .jupiter {
-  width: 5rem;
+  width: 6rem;
 
   border-radius: 50%;
 
-  background: url(../../assets/jupiter.png);
+  background: url(../../../assets/jupiter.png);
   background-size: 100% 100%;
 
   animation-duration: 0.375s;

@@ -1,4 +1,4 @@
-import '@styles/components/Jupiter.css';
+import '@styles/components/planetary-system/Jupiter.css';
 
 const Jupiter = () => {
   return (

@@ -1,16 +1,16 @@
 .uranos-orbit {
-  top: -700%;
-  left: -700%;
+  top: -600%;
+  left: -600%;
 
-  width: 70rem;
+  width: 65rem;
 
   animation-duration: 30689s;
 }
 
 .uranos {
-  width: 4rem;
+  width: 3.5rem;
 
-  background: url(../../assets/uranos.png);
+  background: url(../../../assets/uranos.png);
   background-size: 100% 100%;
 
 

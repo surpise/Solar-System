@@ -1,16 +1,16 @@
 .saturn-orbit {
-  top: -600%;
-  left: -600%;
+  top: -500%;
+  left: -500%;
 
-  width: 60rem;
+  width: 55rem;
 
   animation-duration: 10759s;
 }
 
 .saturn {
-  width: 6.5rem;
+  width: 6rem;
 
-  background: url(../../assets/saturn.png);
+  background: url(../../../assets/saturn.png);
   background-size: 100% 100%;
 
   animation-duration: 0.4s;

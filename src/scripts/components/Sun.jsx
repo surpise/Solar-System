@@ -6,6 +6,7 @@ import Mercury from '@components/Mercury';
 import Venus from '@components/Venus';
 import Mars from '@components/Mars';
 import Jupiter from '@components/Jupiter';
+import Saturn from '@components/Saturn';
 
 const Sun = () => {
   return (
@@ -15,6 +16,7 @@ const Sun = () => {
       <Earth />
       <Mars/>
       <Jupiter/>
+      <Saturn/>
     </div>
   );
 };

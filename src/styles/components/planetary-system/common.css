@@ -1,5 +1,5 @@
-@import '../animation/Revolve.css';
-@import '../animation/Rotate.css';
+@import '../../animation/Revolve.css';
+@import '../../animation/Rotate.css';
 
 .orbit {
   position: absolute;

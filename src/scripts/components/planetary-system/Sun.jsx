@@ -1,4 +1,4 @@
-import '@styles/components/Common.css';
+import '@styles/components/planetary-system/common.css';
 import '@styles/components/planetary-system/Sun.css';
 
 import Earth from '@scripts/components/planetary-system/Earth';

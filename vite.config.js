@@ -11,6 +11,7 @@ export default defineConfig({
       '@assets': resolve(__dirname, './src/assets'),
       '@scripts': resolve(__dirname, './src/scripts'),
       '@components': resolve(__dirname, './src/scripts/components'),
+      '@pages': resolve(__dirname, './src/scripts/pages'),
       '@util': resolve(__dirname, './src/scripts/util'),
       '@styles': resolve(__dirname, './src/styles'),
     },

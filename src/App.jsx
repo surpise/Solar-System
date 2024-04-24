@@ -1,11 +1,11 @@
-import Sun from '@/scripts/components/planetary-system/Sun';
+import Home from '@pages/Home';
 
 import '@styles/App.css';
 
 function App() {
   return (
     <>
-      <Sun />
+      <Home />
     </>
   );
 }

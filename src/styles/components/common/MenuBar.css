@@ -24,13 +24,14 @@
   width: 20%;
   height: 100%;
 
-  input, label {
+  input,
+  label {
     box-sizing: border-box;
     flex: 1;
     cursor: pointer;
   }
 
-  input{
+  input {
     display: none;
   }
 
@@ -57,8 +58,8 @@
     transition: all 0.15s ease-in-out;
   }
 
-  label::after{
-    content: "";
+  label::after {
+    content: '';
     position: absolute;
 
     left: 50%;
@@ -69,21 +70,20 @@
     border: 2px solid lightgray;
     background-color: white;
     border-radius: 50%;
-    pointer-events: none;
     z-index: 1;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
   }
 
-  label:hover::after{
+  label:hover::after {
     transform: translate(-50%, -50%) scale(1.25s);
   }
 
-  input:checked + label::before{
+  input:checked + label::before {
     font-weight: 800;
   }
 
-  input:checked + label::after{
+  input:checked + label::after {
     border-width: 4px;
     transform: translate(-50%, -50%) scale(0.75);
     border: 2px solid white;
@@ -99,7 +99,7 @@
   border: 4px solid white;
 }
 
-.dot{
+.dot {
   display: block;
 
   position: absolute;
@@ -111,19 +111,19 @@
   border-radius: 50%;
   transition: all 0.15s ease-in-out;
 
-  border:2px solid white;
+  border: 2px solid white;
   z-index: 2;
 }
 
-.speedSlider input:checked:nth-child(1) ~ .dot{
+.speedSlider input:checked:nth-child(1) ~ .dot {
   left: 12.5%;
 }
-.speedSlider input:checked:nth-child(3) ~ .dot{
+.speedSlider input:checked:nth-child(3) ~ .dot {
   left: 37.5%;
 }
-.speedSlider input:checked:nth-child(5) ~ .dot{
+.speedSlider input:checked:nth-child(5) ~ .dot {
   left: 62.5%;
 }
-.speedSlider input:checked:nth-child(7) ~ .dot{
+.speedSlider input:checked:nth-child(7) ~ .dot {
   left: 87.5%;
 }

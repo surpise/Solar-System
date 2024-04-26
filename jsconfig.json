@@ -6,7 +6,8 @@
       "@scripts/*": ["./src/scripts/*"],
       "@components/*": ["./src/scripts/components/*"],
       "@pages/*": ["./src/scripts/pages/*"],
-      "@util/*": ["./src/scripts/util/*"],
+      "@store/*": ["./src/scripts/store/*"],
+      "@utils/*": ["./src/scripts/utils/*"],
       "@styles/*": ["./src/styles/*"]
     }
   }

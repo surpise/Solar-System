@@ -1,0 +1,48 @@
+@import '../../animation/Revolve.css';
+@import '../../animation/Rotate.css';
+
+.orbit {
+  position: absolute;
+
+  aspect-ratio: 1;
+
+  border: solid 0.01rem gray;
+  border-radius: 50%;
+
+  animation-name: revolve;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.planet {
+  position: absolute;
+  top: 50%;
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.speed-05,
+.speed-05::before {
+  animation-duration: calc(var(--animation-duration) * 2);
+}
+
+.speed-10,
+.speed-10::before {
+  animation-duration: var(--animation-duration);
+}
+
+.speed-15,
+.speed-15::before {
+  animation-duration: calc(var(--animation-duration) * 0.75);
+}
+
+.speed-20,
+.speed-20::before {
+  animation-duration: calc(var(--animation-duration) * 0.5);
+}

@@ -2,7 +2,7 @@
 
 .sun {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -11,6 +11,8 @@
 }
 
 .sun::before {
+  --animation-duration: 27s;
+
   content: '';
   position: absolute;
   top: 50%;
@@ -26,5 +28,7 @@
   background: url(../../../assets/sun.jpg);
   background-size: 200% 100%;
 
-  animation: rotate 27s linear infinite;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }

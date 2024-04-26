@@ -1,9 +1,11 @@
 import '@styles/components/planetary-system/Uranos.css';
 
+import { useClassNameBySpeedStore } from '@utils/utils';
+
 const Uranos = () => {
   return (
-    <div className="orbit uranos-orbit">
-      <div className="planet uranos"></div>
+    <div className={`orbit uranos-orbit ${useClassNameBySpeedStore()}`}>
+      <div className={`planet uranos ${useClassNameBySpeedStore()}`}></div>
     </div>
   );
 };

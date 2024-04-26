@@ -1,17 +1,17 @@
 .mars-orbit {
+  --animation-duration: 687s;
+
   top: -250%;
   left: -250%;
 
   width: 30rem;
-
-  animation-duration: 687s;
 }
 
 .mars {
+  --animation-duration: 1s;
+
   width: 2rem;
 
   background: url(../../../assets/mars.png);
   background-size: 100% 100%;
-
-  animation-duration: 1s;
 }

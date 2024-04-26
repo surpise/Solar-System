@@ -1,4 +1,4 @@
-import '@styles/components/Common.css';
+import '@styles/components/planetary-system/common.css';
 import '@styles/components/planetary-system/Sun.css';
 
 import Earth from '@scripts/components/planetary-system/Earth';
@@ -10,9 +10,11 @@ import Saturn from '@scripts/components/planetary-system/Saturn';
 import Uranos from '@scripts/components/planetary-system/Uranos';
 import Neptune from '@scripts/components/planetary-system/Neptune';
 
+import { useClassNameBySpeedStore } from '@utils/utils';
+
 const Sun = () => {
   return (
-    <div className="sun">
+    <div className={`sun ${useClassNameBySpeedStore()}`}>
       <Mercury />
       <Venus />
       <Earth />

@@ -1,16 +1,13 @@
 .venus-orbit {
   --animation-duration: 225s;
 
-  top: -80%;
-  left: -80%;
-
-  width: 13rem;
+  width: 7%;
 }
 
 .venus {
   --animation-duration: 117s;
 
-  width: 2rem;
+  width: 13%;
 
   background: url(../../../assets/venus.png);
   background-size: 100% 100%;

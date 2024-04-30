@@ -1,4 +1,4 @@
-import '@styles/components/common/MenuBar.css';
+import '@styles/components/Home/MenuBar.css';
 
 import useSpeedStore from '@/scripts/store/useSpeedStore';
 

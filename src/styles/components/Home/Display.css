@@ -1,0 +1,18 @@
+
+.display {
+  position: absolute;
+  top: 15%;
+  display: flex;
+
+  width: 90%;
+  height: 80%;
+
+  justify-content: center;
+  align-items: center;
+
+
+  border: solid 2px white;
+  border-radius: 5%;
+
+  overflow: hidden;
+}

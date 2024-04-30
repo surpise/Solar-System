@@ -1,16 +1,13 @@
 .neptune-orbit {
   --animation-duration: 60182s;
 
-  top: -700%;
-  left: -700%;
-
-  width: 75rem;
+  width: 40%;
 }
 
 .neptune {
   --animation-duration: 0.6s;
 
-  width: 3.5rem;
+  width: 5%;
 
   background: url(../../../assets/neptune.png);
   background-size: 100% 100%;

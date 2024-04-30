@@ -3,17 +3,14 @@
 .earth-orbit {
   --animation-duration: 365s;
 
-  top: -150%;
-  left: -150%;
-
-  width: 20rem;
+  width: 10%;
 }
 
 .earth {
   position: absolute;
   top: 50%;
 
-  width: 3rem;
+  width: 16%;
   aspect-ratio: 1;
 }
 
@@ -23,7 +20,7 @@
   content: '';
   position: absolute;
 
-  width: 3rem;
+  width: 100%;
   aspect-ratio: 1;
 
   border-radius: 50%;
@@ -38,16 +35,18 @@
 
 .moon-orbit {
   --animation-duration: 1s;
-  top: -70%;
-  left: -70%;
 
-  width: 4rem;
+  width: 120%;
+
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .moon {
   transform: translate(-50%, -50%);
 
-  width: 1rem;
+  width: 20%;
 
   background: url(../../../assets/moon.png);
   background-size: 100% 100%;

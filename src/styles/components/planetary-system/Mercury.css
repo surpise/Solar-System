@@ -1,16 +1,13 @@
 .mercury-orbit {
   --animation-duration: 88s;
 
-  top: -25%;
-  left: -25%;
-
-  width: 7.5rem;
+  width: 4.5%;
 }
 
 .mercury {
   --animation-duration: 59s;
 
-  width: 1rem;
+  width: 10%;
 
   background: url(../../../assets/mercury.png);
   background-size: 100% 100%;

@@ -2,11 +2,7 @@
 
 .sun {
   position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 5rem;
+  width: 3%;
   aspect-ratio: 1;
 }
 
@@ -15,9 +11,7 @@
 
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5rem;
+  width: 100%;
   aspect-ratio: 1;
 
   border-radius: 50%;
@@ -28,7 +22,7 @@
   background: url(../../../assets/sun.jpg);
   background-size: 200% 100%;
 
-  animation-name: rotate;
+  animation-name: revolve;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

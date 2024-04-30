@@ -3,7 +3,7 @@
 
 .orbit {
   position: absolute;
-
+  
   aspect-ratio: 1;
 
   border: solid 0.01rem gray;
@@ -17,7 +17,6 @@
 .planet {
   position: absolute;
   top: 50%;
-
   aspect-ratio: 1;
 
   border-radius: 50%;

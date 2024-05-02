@@ -8,6 +8,16 @@
 
   justify-content: center;
   align-items: center;
+
+  transition: transform 0.15s ease-in-out;
+}
+
+.display:hover {
+  cursor: grab;
+}
+
+.display:active {
+  cursor: grabbing;
 }
 
 .zoomButtonContainer {

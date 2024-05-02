@@ -45,33 +45,33 @@ const Display = () => {
   const handleMouseUp = () => setIsDragging(false);
 
   return (
-    <>
-      <div
-        className="display"
-        style={{ transform: `scale(${scale})` }}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-      >
-        <Sun />
-        <Mercury />
-        <Venus />
-        <Earth />
-        <Mars />
-        <Jupiter />
-        <Saturn />
-        <Uranos />
-        <Neptune />
+      <div className="display">
+        <div
+          className="planetary-system"
+          style={{ transform: `scale(${scale})` }}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+        >
+          <Sun />
+          <Mercury />
+          <Venus />
+          <Earth />
+          <Mars />
+          <Jupiter />
+          <Saturn />
+          <Uranos />
+          <Neptune />
+        </div>
+        <div className="zoomButtonContainer">
+          <button className="zoomOut" onClick={handleZoomOut}>
+            -
+          </button>
+          <button className="zoomIn" onClick={handleZoomIn}>
+            +
+          </button>
+        </div>
       </div>
-      <div className="zoomButtonContainer">
-        <button className="zoomOut" onClick={handleZoomOut}>
-          -
-        </button>
-        <button className="zoomIn" onClick={handleZoomIn}>
-          +
-        </button>
-      </div>
-    </>
   );
 };
 

@@ -31,8 +31,8 @@
 
 .zoomButtonContainer {
   position: absolute;
-  top: 85%;
-  left: 90%;
+  bottom: 5%;
+  right: 3%;
 
   display: flex;
   width: 10rem;

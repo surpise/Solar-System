@@ -1,17 +1,10 @@
 @import '../../animation/Rotate.css';
 
 .sun {
-  position: absolute;
-  width: 3%;
-  aspect-ratio: 1;
-}
-
-.sun::before {
   --animation-duration: 27s;
 
-  content: '';
   position: absolute;
-  width: 100%;
+  width: 3%;
   aspect-ratio: 1;
 
   border-radius: 50%;

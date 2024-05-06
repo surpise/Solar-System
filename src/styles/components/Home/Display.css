@@ -17,7 +17,7 @@
   cursor: grabbing;
 }
 
-.planetary-system{
+.planetary-system {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -31,8 +31,8 @@
 
 .zoomButtonContainer {
   position: absolute;
-  top: 85%;
-  left: 90%;
+  bottom: 5%;
+  right: 3%;
 
   display: flex;
   width: 10rem;

@@ -1,28 +1,19 @@
 import '@styles/components/Home/Display.css';
+import '@styles/components/planetary-system/planetary-system.css';
 
 import { useState } from 'react';
 
 import Sun from '@components/planetary-system/Sun';
-import Earth from '@components/planetary-system/Earth';
-import Mercury from '@components/planetary-system/Mercury';
-import Venus from '@components/planetary-system/Venus';
-import Mars from '@components/planetary-system/Mars';
-import Jupiter from '@components/planetary-system/Jupiter';
-import Saturn from '@components/planetary-system/Saturn';
-import Uranos from '@components/planetary-system/Uranos';
-import Neptune from '@components/planetary-system/Neptune';
+import Planet from '@components/planetary-system/Planet';
 
 const Display = () => {
   const [scale, setScale] = useState(1);
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
-  const handleZoomOut = () => {
-    if (scale > 0.5) setScale(scale - 0.2);
-  };
-
-  const handleZoomIn = () => {
-    if (scale < 2) setScale(scale + 0.2);
+  const handleZoom = (factor) => {
+    const newScale = scale + factor;
+    if (newScale >= 0.5 && newScale <= 2) setScale(newScale);
   };
 
   const handleMouseDown = (e) => {
@@ -54,20 +45,23 @@ const Display = () => {
         onMouseUp={handleMouseUp}
       >
         <Sun />
-        <Mercury />
-        <Venus />
-        <Earth />
-        <Mars />
-        <Jupiter />
-        <Saturn />
-        <Uranos />
-        <Neptune />
+        <Planet planetName={'mercury'} />
+        <Planet planetName={'venus'} />
+        <Planet planetName={'earth'}>
+          <Planet planetName={'moon'} />
+        </Planet>
+        <Planet planetName={'mars'} />
+        <Planet planetName={'jupiter'} />
+        <Planet planetName={'saturn'} />
+        <Planet planetName={'uranos'} />
+        <Planet planetName={'neptune'} />
       </div>
+      
       <div className="zoomButtonContainer">
-        <button className="zoomOut" onClick={handleZoomOut}>
+        <button className="zoomButton" onClick={() => handleZoom(-0.2)}>
           -
         </button>
-        <button className="zoomIn" onClick={handleZoomIn}>
+        <button className="zoomButton" onClick={() => handleZoom(0.2)}>
           +
         </button>
       </div>

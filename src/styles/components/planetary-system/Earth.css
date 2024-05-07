@@ -7,11 +7,7 @@
 }
 
 .earth {
-  position: absolute;
-  top: 50%;
-
   width: 16%;
-  aspect-ratio: 1;
 }
 
 .earth::before {
@@ -28,17 +24,19 @@
   background: url(../../../assets/earth.png);
   background-size: 100% 100%;
 
-  animation-name: rotate;
+  animation-name: revolve;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .moon-orbit {
   --animation-duration: 1s;
+  width: 115%;
 
-  width: 120%;
+  top: -10%;
+  left: -10%;
 
-  animation-name: rotate;
+  animation-name: revolve;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -50,4 +48,6 @@
 
   background: url(../../../assets/moon.png);
   background-size: 100% 100%;
+
+  animation-name: none;
 }

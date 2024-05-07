@@ -1,7 +1,6 @@
 import '@styles/components/Home/Display.css';
 import '@styles/components/planetary-system/planetary-system.css';
 
-
 import { useState } from 'react';
 
 import Sun from '@components/planetary-system/Sun';
@@ -12,12 +11,9 @@ const Display = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
-  const handleZoomOut = () => {
-    if (scale > 0.5) setScale(scale - 0.2);
-  };
-
-  const handleZoomIn = () => {
-    if (scale < 2) setScale(scale + 0.2);
+  const handleZoom = (factor) => {
+    const newScale = scale + factor;
+    if (newScale >= 0.5 && newScale <= 2) setScale(newScale);
   };
 
   const handleMouseDown = (e) => {
@@ -60,11 +56,12 @@ const Display = () => {
         <Planet planetName={'uranos'} />
         <Planet planetName={'neptune'} />
       </div>
+      
       <div className="zoomButtonContainer">
-        <button className="zoomOut" onClick={handleZoomOut}>
+        <button className="zoomButton" onClick={() => handleZoom(-0.2)}>
           -
         </button>
-        <button className="zoomIn" onClick={handleZoomIn}>
+        <button className="zoomButton" onClick={() => handleZoom(0.2)}>
           +
         </button>
       </div>
